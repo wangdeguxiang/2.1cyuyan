@@ -1,0 +1,78 @@
+//函数
+
+
+int get_max(int x,int y){
+    int z = 0;
+    if(x > y)
+       z = x;
+    else
+       z = y;
+    return 0; 
+}
+int main(){
+    int a = 10;
+    int b = 20;
+    //函数的调用
+    int max=get_max(a,b);
+    printf("max=%d\n",max);
+    return 0;
+
+}
+
+
+
+
+
+
+void Swap(int *pa,int *pb){
+    int z = 0;
+    z = *pa;
+    *pa = *pb;
+    *pb = z;
+}
+
+int main(){
+    int a = 10; 
+    int b = 20;
+    //写一个函数交换2个整型变量的值
+    printf("交换前:a=%d b=%d\n",a,b);
+    Swap(&a,&b);//传址调用
+    //Swap(a,b);  传值调用
+    printf("交换后:a=%d b=%d\n",a,b);
+    return 0;
+
+}
+
+
+
+
+
+
+int is_prime(int n){
+    //2 -> n-1之间的数字
+    int j = 0;
+    for(j = 2; j < n; j++){
+        if(n % j ==0)
+        return 0;
+    }
+    return 1;
+
+}
+
+int main(){
+    //100~200之间的素数
+    int i = 0;
+    int count = 0;
+    for(i = 100; i <=200; i++){
+        if(is_prime(i) == 1){
+            prindf("%d",i);
+            count ++;
+        }
+        prindf("%d",count);
+
+    }
+    return 0;
+
+}
+
+
