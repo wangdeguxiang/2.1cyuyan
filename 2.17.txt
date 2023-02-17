@@ -1,0 +1,85 @@
+void Add(*p){
+    (*p)++;
+}
+int nain(){
+    int num = 0;
+    Add(&num);
+    printf("%d\n",num);
+
+    Add(&num);
+    printf("%d\n",num);
+
+    Add(&num);
+    printf("%d\n",num);
+    return 0;
+}
+//函数的嵌套调用和链式访问
+
+void test3(){
+    printf("hahaha");
+}
+int test2(){
+    test3();
+    return 0;
+}
+int main (){
+    test2();
+    return 0;
+}
+
+
+
+#include<string.h>
+int main(){
+    int m =strlen("abc");
+    printf("%d\n",m);
+
+    //链式访问
+    printf("%d\n",strlen("abc"));
+
+    return 0;
+}
+
+
+//函数的声明和定义
+//先声明再定义
+
+int main(){
+    int a = 10;
+    int b = 20;
+    //函数声明
+    int Add(int,int);
+    int c =Add(a,b);
+    printf("%d\n",c); 
+
+    return 0;
+}
+//函数的定义
+int Add(int x,int y){
+    return x + y;
+}
+
+int main(){
+    printf("haha");
+    main();
+    return 0;
+
+}
+
+
+
+void print(unsigned int n){
+    if(n >9){
+        printf(n / 10);
+    }
+    printf("%d",n % 10)
+
+}
+int main(){
+    
+    unsigned int num = 0;
+    scanf("%u",&num);//1234
+    //递归 - 函数自己调用自己
+    printf(num);//printf函数可以打印参数数字的每一位
+    return 0;
+}
