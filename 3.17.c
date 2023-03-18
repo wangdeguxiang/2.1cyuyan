@@ -9,7 +9,7 @@ int main(){
     for(j = 1;j <= n;j++){
         ret = 1;
         for(i = 1;i <= j; i++){
-            ret * =i;
+            ret *=i;
         }
         sum +=ret;
     }
