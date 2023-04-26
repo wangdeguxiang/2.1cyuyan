@@ -6,6 +6,7 @@ int main(){
     }
 
 
+
 int main(){
     char * []={"exet","new","point","float"};
     char**cp[]{c+3,c+2,c+1,c};
