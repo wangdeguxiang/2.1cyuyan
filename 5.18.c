@@ -12,13 +12,6 @@ int main(){
 
 
 
-
-
-
-
-
-
-
 #define MAX_NAME 20
 #define MAX_SEX 20
 #define MAX_TELE 20
